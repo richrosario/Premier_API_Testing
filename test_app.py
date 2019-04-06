@@ -35,13 +35,13 @@ for t in teams(12962):
 	print(t['id'], t['name'])
 '''
 
-## List of players in a team within a season ID ##-------------
+## List of players with stats in a team within a season ID ##-------------
 
-'''
+
 print('Player Data:')
 for ts in team_squad(12962,42):
 	print (player(ts['player_id'])['lastname'], ts, '\n')
-'''
+
 
 ## Data for a specific player ##-------------
 
@@ -55,10 +55,10 @@ for ts in team_squad(12962,42):
 
 ## Specific Data for a specific player ##-------------
 
-
+'''
 print('Player Data:')
 for ts in team_squad(12962,42):
 		if ts['player_id'] == 1182:
 			print (player(ts['player_id'])['lastname'], ts['goals'], '\n')
-
+'''
 
