@@ -42,6 +42,14 @@ def get(endpoint, include=None, page=None, paginated=True):
                 data.extend(next_data)
     return data
 
+def team_squad(sid, tid):
+    """With this endpoint you are able to retrieve a list of players in a team."""
+    return get('squad/season/{}/team/{}'.format(sid, tid))
+
+def player(id):
+    """With this endpoint you are able to retrieve a list of players in a team."""
+    return get('players/{}'.format(id))
+
 def continents():
     """With this endpoint you are able to retrieve a list of continents."""
     return get('continents')
