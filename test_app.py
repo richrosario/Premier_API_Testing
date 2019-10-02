@@ -1,7 +1,7 @@
 #/usr/bin/python
 from sportmonks import *
 
-token = 'nUUgH5WyYmqtksHD5pbCAFq0xaRrXYXHswOum5FfU4p7zEl9unl3xplmTOtF'
+token = ''
 init(token)
 
 #Prem ID: 8
